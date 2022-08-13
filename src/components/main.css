@@ -1,0 +1,165 @@
+/* hide scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* main setting styles */
+
+* {
+  direction: rtl;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.col {
+  padding: 0;
+}
+
+.widthAll {
+  width: 100%;
+}
+
+.heightAll {
+  height: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+/* components style */
+.headerSite .triangle {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-right: 62px solid #fff;
+  border-bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.headerSite .headerText {
+  font-size: 14px;
+}
+
+.headerSite .itemText {
+  font-size: 16px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.footer .con-example-images {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.footer .footerDiv {
+  width: 60%;
+}
+
+.aboutComponent .aboutText {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+/* responsive */
+
+@media (min-width: 960px) and (max-width: 1263px) {
+  .headerSite .itemText {
+    font-size: 14px;
+    margin-right: 18px;
+    margin-left: 18px;
+  }
+
+  .aboutComponent .aboutText {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .headerSite .itemText {
+    font-size: 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .headerSite .headerText {
+    font-size: 10px;
+  }
+
+  .footer .footerDiv {
+    width: 90%;
+  }
+
+  .footer .vs-image {
+    width: calc(25% - 4px) !important;
+  }
+
+  .aboutComponent .aboutText {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .headerSite .itemText {
+    font-size: 10px;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  .headerSite .headerText {
+    font-size: 10px;
+  }
+
+  .footer .footerDiv {
+    width: 100%;
+  }
+
+  .footer .vs-image {
+    width: calc(17% - -22px) !important;
+  }
+}
+
+@media (max-width: 499px) {
+  .headerSite .itemText {
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .headerSite .headerText {
+    font-size: 14px;
+  }
+
+  .headerSite .triangle {
+    border-top: 66px solid transparent;
+  }
+
+  .aboutComponent .aboutText {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
